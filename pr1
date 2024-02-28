@@ -1,0 +1,9 @@
+def calculateFormula(a, b, x, m, n):
+    result1 = (a + b) ** n
+    result2 = 1 + (x / (x ** m + b ** m - n))
+    result = result1 / result2
+    return result, a, b, x, m, n
+    print(result)
+
+
+print(calculateFormula(2, 9, 3, 4, 6))
